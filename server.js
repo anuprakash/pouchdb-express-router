@@ -8,7 +8,7 @@ var PouchDB = require('pouchdb');
 var router = require('./index.js');
 var app = require('express')();
 
-const PORT = process.env.PORT || 5984;
+const PORT = process.env.PORT || 80;
 
 app.use(router(PouchDB));
 app.listen(PORT);
